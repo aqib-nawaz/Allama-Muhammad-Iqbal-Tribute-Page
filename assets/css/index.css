@@ -1,0 +1,270 @@
+/* variables */
+:root {
+  --headingColor: rgb(141, 70, 19);
+}
+body {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+a{
+  color:#fff;
+}
+h1,h2,h3,h4,h5,h6{
+  color: var(--headingColor);
+  font-family: 'Montserrat', sans-serif;
+} 
+/* Main Container */
+
+#main {
+  background: hsla(39, 100%, 77%, 1);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* Header */
+#header{
+  margin-bottom:100px;
+}
+#header-title{
+  background:rgb(141, 70, 19);
+  text-align: center;
+  color:rgb(255, 255, 255);
+  padding:5px;
+  position: fixed;
+  width:100%;
+  z-index:999;
+}
+
+#header-title h1{
+  color:rgb(255, 255, 255);
+  font-weight: 600;
+  font-size: 50px;
+  font-family: 'Caveat', cursive !important;
+}
+#header-title h1 a{
+  text-decoration: none;
+}
+#header-title h1 a:hover{
+  color: #fff;
+}
+#header-title p{
+  font-size: 18px;
+  font-family: 'Montserrat', sans-serif;
+}
+#nav-bar{
+  background-color: #8b451369;
+  border-radius: 0px 0px 40px 40px;
+  margin-bottom: 30px;
+  margin-top: 0px;
+  padding-top:120px;
+  
+}
+#nav-bar li a{
+  color:#fff;
+  font-family: 'Montserrat', sans-serif
+}
+#nav-bar li a:hover{
+  background-color: rgb(141, 70, 19);
+}
+
+.image-div{
+  max-width:65%;
+  margin:0 auto;
+  box-shadow: rgba(23,43,99,.4) 0 7px 28px!important;
+  border-radius:14px 14px;
+}
+.image-div figure img{
+  text-align: center;
+  display: block;
+  max-width:100%;
+  height: auto;
+  margin:0 auto;
+  border-radius:14px 14px 0px 0px;
+}
+.image-div figcaption{
+  text-align: center;
+  padding: 10px;
+  background-color:#8b451369;;
+  border-radius: 0px 0px 14px 14px;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Content */
+/* Tribute Info*/
+/* Sections */
+.about-section,.poems-section, .books-section, .gallery-section, .more-section{
+  width:70%;
+  margin:0 auto;
+  margin-bottom: 100px;
+} 
+
+/* Poem Section */
+#poems p{
+  margin-bottom: 50px;
+}
+.poems-link {
+  background-color: rgb(141, 70, 19);
+  padding: 15px;
+  box-sizing: border-box;
+  margin-top: 50px;
+  border-radius: 2px;
+}
+#poems h4 a{
+  color: rgb(0, 255, 200);
+  text-decoration: none;
+  
+}
+#poems h4 a:hover{
+  color: rgb(255, 255, 255);
+  text-decoration: underline;
+}
+
+/* Books Section */
+
+.accordion-header .accordion-button{
+  background: rgb(141, 70, 19);
+  font-size: 20px;
+  color: #fff;
+}
+.accordion-body ul li{
+  color: #777;
+  
+}
+.accordion-body ul li a{
+  color: #777;
+  margin: 10px;
+  padding:4px;
+  text-decoration: none;
+}
+.accordion-body ul li:hover{
+  color: #777;
+  background-color: #8b451369;
+}
+.accordion-button::after{
+  padding: 4px;
+  border-radius: 2px;
+ background-color: white;
+}
+
+/* More Section */
+
+
+.card-body{
+  background: rgb(141, 70, 19);
+  font-size: 20px;
+  color: #fff;
+  border-radius: 2px;
+} 
+.list-group-item a{
+  color: #777;
+  margin: 10px;
+  padding:4px;
+  text-decoration: none;
+}
+.list-group-item:hover{
+  color: #777;
+  background-color: #8b451369;
+}
+
+/* Photo Gallery Section */
+
+.gallery-div{
+  display: flex !important;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+}
+
+.gallery-div img{
+  width: 30% !important;
+  height:auto !important;
+  margin: 3px;
+}
+
+/* footer */
+
+#footer{
+  background: rgb(141, 70, 19);
+  padding:12px;
+  text-align: center;
+  color:#fff;
+}
+#footer p a{
+  font-weight: 600;
+  text-decoration: underline;
+  color:#fff;
+}
+#footer p a:hover{
+  font-weight: 600;
+  text-decoration: none;
+  color:rgb(0, 0, 0);
+  
+}
+#footer span{
+  color:rgb(255, 0, 0);
+  font-size: 20px;
+  font-weight: bold;
+}
+
+
+/* Responsive */
+@media screen and (max-width: 800px) {
+  #header-title h1{
+    font-size: 40px;
+  }
+  #header-title p{
+    font-size: 16px;
+  }
+  #nav-bar{
+    padding-top:130px;
+  }
+  .image-div{
+    width:70%;
+  }
+  .image-div figcaption{
+    font-size: 0.9em;
+  }
+  h1 {
+    font-size:1.9rem;
+  }
+
+  .about-section,.poems-section, .books-section, .gallery-section, .more-section{
+    width:90%;
+  }
+}
+@media screen and (max-width: 600px) {
+  #header-title{
+    padding:9px;
+  }
+  #header-title h1{
+    font-size: 35px;
+  }
+  #header-title p{
+    font-size: 13px;
+  }
+#nav-bar{
+  border-radius: 0px;
+}
+.image-div{
+  width:75%;
+}
+.image-div figcaption{
+  font-size: 0.7em;
+}
+  h1 {
+    font-size:1.5rem;
+  }
+  .about-section,.poems-section, .books-section, .gallery-section, .more-section{
+    width:95%;
+   
+  }
+}
+@media screen and (max-width: 320px){
+  #nav-bar{
+    padding-top:190px;
+  }
+
+} 
